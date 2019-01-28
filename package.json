@@ -1,0 +1,58 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "immutability-helper": "^2.8.1",
+    "mongodb": "^3.1.9",
+    "mongoose": "^5.3.11",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-engine": "^4.5.1",
+    "react-hot-loader": "^4.3.12",
+    "react-router-dom": "^4.3.1"
+  },
+  "description": "Just a boilerplate",
+  "main": "./app/index.js",
+  "author": "Ashot Nazaryan",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "cssnano": "^4.1.7",
+    "stylus": "^0.54.5"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "app/client/views/**",
+      "**.styl",
+      "**.json"
+    ],
+    "watch": [
+      "app/*.js",
+      "app/config/*.js"
+    ]
+  },
+  "scripts": {
+    "parcel": "parcel ./app/client/index.html",
+    "server": "nodemon $NODE_DEBUG_OPTION ./app/index.js",
+    "build": "parcel build ./app/client/index.html",
+    "start": "yarn run build && node ./app/index.js"
+  }
+}

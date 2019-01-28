@@ -1,0 +1,28 @@
+button
+	padding 15px 25px
+	border none
+	margin 0 5px
+	color: #fff;
+	border-radius 4px
+	cursor pointer
+	transition background-color 0.2s
+	font-size: 16px;
+	&[disabled]
+		cursor not-allowed
+		background-color #2a2a2a !important
+	&.redButton
+		background-color #cd3d00
+		&:hover
+			background-color darken(@background-color, 10%)
+	&.purpleButton
+		background-color #6200EE
+		&:hover
+			background-color darken(@background-color, 10%)
+	&.blueButton
+		background-color: #008dc8;
+		&:hover
+			background-color darken(@background-color, 30%)
+	&.greenButton
+		background-color: #009b00;
+		&:hover
+			background-color darken(@background-color, 30%)

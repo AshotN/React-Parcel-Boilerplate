@@ -1,0 +1,23 @@
+nav
+	.wrapper
+		background-color: #23262a;
+		height 100%
+		ul
+			display: block;
+			list-style none
+			a
+				&.active
+					li
+						background-color lighten(@background-color, 15%)
+				outline none
+				border none
+				li
+					position: relative;
+					margin: 0 auto
+					padding 10px
+					&:hover
+						background-color darken(@background-color, 20%)
+					img
+						width: 80%;
+						margin: 0 auto;
+						display: block;
