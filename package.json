@@ -4,7 +4,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "immutability-helper": "^2.8.1",
+    "immutability-helper": "^3.0.0",
     "mongodb": "^3.1.9",
     "mongoose": "^5.3.11",
     "path": "^0.12.7",
@@ -13,7 +13,7 @@
     "react-dom": "^16.0.0",
     "react-engine": "^4.5.1",
     "react-hot-loader": "^4.3.12",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^5.0.0"
   },
   "description": "Just a boilerplate",
   "main": "./app/index.js",
